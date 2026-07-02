@@ -42,7 +42,7 @@
   <meta name="citation_author" content="LastName, FirstName">
   <meta name="citation_author" content="LastName2, FirstName2">
   <meta name="citation_publication_date" content="2025">
-  <meta name="citation_conference_title" content="arXiv Preprint">
+  <meta name="citation_conference_title" content="International Conference on Machine Learning (ICML) 2026">
   <meta name="citation_pdf_url" content="https://arxiv.org/pdf/ARXIV_ID.pdf">
 
   <meta name="theme-color" content="#2563eb">
@@ -56,10 +56,7 @@
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <title>TAP: Task-Agnostic Pretraining for VLA | Academic Research</title>
-
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  <title>Task-Agnostic Pretraining for VLA | Academic Research</title>
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
@@ -87,33 +84,27 @@
 
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
+ {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models",
-    "description": "A two-stage framework that pretrains VLA policies on free task-agnostic interaction data and finetunes with a handful of expert demonstrations.",
+    "headline": "Learning to Move Before Learning to Do: Task-Agnostic Pretraining for VLAs",
+    "description": "A two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data via self-supervised Inverse Dynamics, then aligns with language using minimal expert data.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "First Author",
-        "affiliation": { "@type": "Organization", "name": "Your Institution" }
-      },
-      {
-        "@type": "Person",
-        "name": "Second Author",
-        "affiliation": { "@type": "Organization", "name": "Your Institution" }
-      }
+      { "@type": "Person", "name": "Junhao Shi", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
+      { "@type": "Person", "name": "Siyin Wang", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
+      { "@type": "Person", "name": "Xiaopeng Yu", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
+      { "@type": "Person", "name": "Li Ji", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
+      { "@type": "Person", "name": "Jingjing Gong", "affiliation": { "@type": "Organization", "name": "Shanghai Innovation Institute" } },
+      { "@type": "Person", "name": "Xipeng Qiu", "affiliation": { "@type": "Organization", "name": "Fudan University" } }
     ],
-    "datePublished": "2025-01-01",
-    "publisher": { "@type": "Organization", "name": "arXiv" },
-    "url": "https://YOUR_DOMAIN.github.io/TAP",
-    "image": "https://YOUR_DOMAIN.github.io/TAP/static/images/social_preview.png",
-    "keywords": ["Vision-Language-Action", "Robot Learning", "Task-Agnostic Pretraining", "Data Efficiency", "Manipulation"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "datePublished": "2026-06-30",
+    "publisher": { "@type": "Organization", "name": "ICML 2026" },
+    "url": "https://sjh0354.github.io/task_agnostic_pretrain",
+    "keywords": ["Vision-Language-Action", "Task-Agnostic Pretraining", "Inverse Dynamics", "Robot Learning", "Manipulation"],
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/"
   }
-  </script>
+</script>
 </head>
 <body>
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
@@ -134,11 +125,11 @@
         </button>
       </div>
       <div class="works-list">
-        <a href="https://arxiv.org/abs/2506.21230" class="work-item" target="_blank">
+        <a href="https://arxiv.org/abs/2605.12090" class="work-item" target="_blank">
           <div class="work-info">
-            <h5>Enhancing Large Vision-Language Model Planners</h5>
-            <p>Improving planning capabilities of large VLM-based agents.</p>
-            <span class="work-venue">arXiv 2025</span>
+            <h5>World Action Models: The Next Frontier in Embodied AI</h5>
+            <p>The first systematic WAM survey, covering architecture taxonomy, training data, evaluation protocols, and world models for VLA learning.</p>
+            <span class="work-venue">arXiv 2026</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
@@ -146,7 +137,7 @@
           <div class="work-info">
             <h5>LIBERO-Plus: In-Depth Robustness Analysis of VLA Models</h5>
             <p>A comprehensive robustness benchmark for vision-language-action models.</p>
-            <span class="work-venue">arXiv 2025</span>
+            <span class="work-venue">CVPR 2026</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
@@ -155,53 +146,57 @@
   </div>
 
   <main id="main-content">
-  <section class="hero">
+  <section class="hero" style="background-color: #f4f9fe;">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models</h1>
+            <h1 class="title is-1 publication-title">Learning to Move Before Learning to Do: Task-Agnostic Pretraining for VLAs</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="FIRST_AUTHOR_LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="SECOND_AUTHOR_LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-              <span class="author-block">
-                <a href="THIRD_AUTHOR_LINK" target="_blank">Third Author</a>
-              </span>
+              <span class="author-block">Junhao Shi<sup>1,2</sup>,</span>
+              <span class="author-block">Siyin Wang<sup>1,2</sup>,</span>
+              <span class="author-block">Xiaopeng Yu<sup>1</sup>,</span>
+              <span class="author-block">Li Ji<sup>1,2</sup>,</span>
+              <span class="author-block">Jingjing Gong<sup>2</sup>,</span>
+              <span class="author-block">Xipeng Qiu<sup>1,2,†</sup></span>
             </div>
+
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Your Institution<br>arXiv Preprint, 2025</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <span class="author-block"><sup>1</sup>Fudan University</span><br>
+              <span class="author-block"><sup>2</sup>Shanghai Innovation Institute</span><br>
+              <span class="author-block has-text-weight-bold" style="color: #2563eb; font-size: 1em;">ICML 2026</span>
+              <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Authors</small></span><br>
             </div>
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/ARXIV_ID.pdf" target="_blank"
+                  <a href="https://arxiv.org/abs/ARXIV_ID" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Paper</span>
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                  <a href="https://huggingface.co/collections/Michael0354/task-agnostic-pretraining" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                    <span>Supplementary</span>
+                    <span class="icon">
+                      🤗
+                    </span>
+                    <span>Models</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/YOUR_USERNAME/TAP" target="_blank"
+                  <a href="https://github.com/sjh0354/Task-Agnostic-Pretrain" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/ARXIV_ID" target="_blank"
+                  <a href="https://openreview.net/pdf?id=KQiNdlhknK" target="_blank"
                      class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="ai ai-arxiv"></i></span>
-                    <span>arXiv</span>
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Openreview</span>
                   </a>
                 </span>
               </div>
@@ -212,20 +207,6 @@
     </div>
   </section>
 
-  <!-- Teaser -->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
-        </video>
-        <h2 class="subtitle has-text-centered">
-          <strong>TAP</strong> unlocks "free" task-agnostic interaction data (e.g., exploration and play) for pretraining VLA policies,
-          then finetunes with only a handful of expert demonstrations — matching baselines that use orders of magnitude more expert data.
-        </h2>
-      </div>
-    </div>
-  </section>
 
   <!-- Abstract -->
   <section class="section hero is-light">
@@ -235,132 +216,281 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Modern Vision-Language-Action (VLA) models such as OpenVLA achieve strong manipulation performance,
-              but rely on millions of expert demonstrations and industrial-scale compute (e.g., TPU v4 Pods or large A100 clusters)
-              trained for weeks. We introduce <strong>TAP (Task-Agnostic Pretraining)</strong>, a two-stage framework that
-              dramatically reduces both requirements. In <em>Stage 1</em>, we pretrain on task-agnostic interaction data
-              (e.g., exploration or play) that is <em>free</em> in terms of human labeling cost. In <em>Stage 2</em>,
-              we finetune with only a fraction of the expert demonstrations — as few as <strong>200 real-world trajectories</strong> —
-              yet achieve performance competitive with baselines trained on millions of trajectories [1]. Our full pipeline
-              runs on a <strong>single node with 8×H100 GPUs in ~24 GPU hours</strong>, making the reproduction and iteration
-              of VLA policies significantly more accessible to the academic community [1].
+              Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations—triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring <em>physical competence</em> (how to move) and acquiring <em>semantic alignment</em> (what to do). Crucially, only the latter requires language supervision. Building on this <em>Decomposition Hypothesis</em>, we propose <strong>Task-Agnostic Pretraining (TAP)</strong>, a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data—including discarded off-task trajectories and autonomous robot play—via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnostic pretraining produces robust, transferable physical representations and offers a scalable path forward for Embodied AI.
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+<!-- Key Contributions -->
+<!-- Key Contributions -->
+<!-- Key Contributions -->
+  <section class="section">
+    <div class="container is-max-widescreen">
+      <h2 class="title is-3 has-text-centered">Key Contributions</h2>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <!-- 添加了 style="height: 100%;" 强制等高 -->
+          <div class="box" style="height: 100%;">
+            <h4 class="title is-5"><i class="fas fa-layer-group"></i> Decomposition Hypothesis</h4>
+            <p>We propose the <strong>Task-Agnostic Pretraining (TAP)</strong> framework, which fundamentally decouples the learning of physical affordances ("how to move") from semantic task understanding ("what to do") using self-supervised Inverse Dynamics.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box" style="height: 100%;">
+            <h4 class="title is-5"><i class="fas fa-chart-line"></i> Mitigating the Data Wall</h4>
+            <p>TAP matches or exceeds the performance of foundational VLA models trained on over 1 million expert trajectories by leveraging merely 30 hours of autonomous play and a minimal set of expert data (e.g., 200 real-world demonstrations).</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box" style="height: 100%;">
+            <h4 class="title is-5"><i class="fas fa-shield-alt"></i> Real-World Robustness</h4>
+            <p>Our method demonstrates exceptional resilience to real-world distribution shifts, retaining up to 65% success under severe background shifts and camera perturbations where internet-scale baselines catastrophically collapse to 0%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Key Contributions -->
+  <!-- Methodology -->
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Key Contributions</h2>
-      <div class="columns">
-        <div class="column">
-          <div class="box">
-            <h4 class="title is-5"><i class="fas fa-database"></i> Data Efficient</h4>
-            <p>Reduces expert-data demand by <strong>several orders of magnitude</strong>, using only ~200 trajectories in real-world experiments while matching baselines trained on millions [1].</p>
+      <h2 class="title is-3 has-text-centered">Methodology</h2>
+      <div class="content has-text-justified">
+        <p>
+          Our framework consists of two stages. In <strong>Stage 1 (Task-Agnostic Pretraining)</strong>, the model learns robust physical affordances and motor control without human supervision by predicting the action required to transition between past and future visual frames. In <strong>Stage 2 (Task-Specific Alignment)</strong>, the pretrained model is finetuned on a highly limited set of language-annotated expert demonstrations to align these physical priors with high-level semantic instructions.
+        </p>
+      </div>
+      <div class="columns is-centered mt-4">
+        <div class="column is-full">
+          <!-- TODO: Ensure your Figure 1 image is saved at this path -->
+          <img src="static/images/tap_method.png" alt="Overview of the Task-Agnostic Pretraining (TAP) Framework" class="image is-centered" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"/>
+          <p class="has-text-centered is-size-6 mt-3">
+            <em>Figure 1: Overview of the Task-Agnostic Pretraining (TAP) framework. The pipeline begins by harvesting cheap, unlabeled interaction data from autonomous robot play and repurposed datasets. This fuels Stage 1 pretraining via a self-supervised Inverse Dynamics objective to learn physical affordances ("how to move"), followed by a lightweight Stage 2 finetuning to align these motor priors with semantic language instructions ("what to do").</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quantitative Results -->
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+      
+      <!-- Table 1: SIMPLER -->
+      <div class="columns is-centered mt-5">
+        <div class="column is-full">
+          <h3 class="title is-4">SIMPLER Benchmark Performance</h3>
+          <p class="content has-text-justified">
+            We report task-specific success rates for intermediate sub-goals (<em>Part.</em>) and full task completion (<em>Ent.</em>). Models were fine-tuned using the <em>exact same subset</em> of Stage 2 expert data as our TAP model. Our task-agnostic pretraining significantly boosts physical grounding, yielding a 10% absolute gain over standard behavior cloning and matching models trained on 1M+ trajectories.
+          </p>
+          
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth" style="font-size: 0.85em; text-align: center;">
+              <thead>
+                <tr style="background-color: #f5f5f5;">
+                  <th rowspan="2" style="vertical-align: middle;">Type</th>
+                  <th rowspan="2" style="vertical-align: middle;">Model Name</th>
+                  <th colspan="2" class="has-text-centered">Spoon on cloth</th>
+                  <th colspan="2" class="has-text-centered">Carrot on plate</th>
+                  <th colspan="2" class="has-text-centered">Stack Blocks</th>
+                  <th colspan="2" class="has-text-centered">Eggplant in Basket</th>
+                  <th rowspan="2" style="vertical-align: middle;">Avg-Partial</th>
+                  <th rowspan="2" style="vertical-align: middle;">Avg-Entire</th>
+                  <th rowspan="2" style="vertical-align: middle;">Avg-All</th>
+                </tr>
+                <tr style="background-color: #f5f5f5;">
+                  <th>Part.</th><th>Ent.</th>
+                  <th>Part.</th><th>Ent.</th>
+                  <th>Part.</th><th>Ent.</th>
+                  <th>Part.</th><th>Ent.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Reference Section -->
+                <tr>
+                  <td rowspan="4" style="vertical-align: middle;">Reference</td>
+                  <td class="has-text-left">RT-1-X</td>
+                  <td>4.2%</td><td>0.0%</td>
+                  <td>16.7%</td><td>0.0%</td>
+                  <td>0.0%</td><td>0.0%</td>
+                  <td>3.3%</td><td>0.0%</td>
+                  <td>6.05%</td><td>0.00%</td><td>3.03%</td>
+                </tr>
+                <tr>
+                  <td class="has-text-left">OpenVLA</td>
+                  <td>4.1%</td><td>0.0%</td>
+                  <td>33.0%</td><td>0.0%</td>
+                  <td>12.5%</td><td>0.0%</td>
+                  <td>8.3%</td><td>4.1%</td>
+                  <td>14.48%</td><td>1.03%</td><td>7.75%</td>
+                </tr>
+                <tr>
+                  <td class="has-text-left">Nora</td>
+                  <td>37.5%</td><td>16.7%</td>
+                  <td>48.0%</td><td>0.0%</td>
+                  <td>41.7%</td><td>12.5%</td>
+                  <td>4.17%</td><td>0.0%</td>
+                  <td>32.84%</td><td>7.29%</td><td>20.06%</td>
+                </tr>
+                <tr>
+                  <td class="has-text-left">Octo</td>
+                  <td>50.0%</td><td>33.0%</td>
+                  <td><strong>50.0%</strong></td><td><strong>25.0%</strong></td>
+                  <td>29.2%</td><td>0.0%</td>
+                  <td><strong>40.0%</strong></td><td><strong>23.3%</strong></td>
+                  <td>42.30%</td><td>20.33%</td><td>31.31%</td>
+                </tr>
+                <!-- Baseline Section -->
+                <tr style="border-top: 2px solid #dbdbdb;">
+                  <td>Baseline</td>
+                  <td class="has-text-left">Standard BC</td>
+                  <td>41.7%</td><td>33.3%</td>
+                  <td>48.0%</td><td>8.0%</td>
+                  <td>37.5%</td><td><strong>16.7%</strong></td>
+                  <td>0.0%</td><td>0.0%</td>
+                  <td>31.79%</td><td>14.50%</td><td>23.15%</td>
+                </tr>
+                <!-- Ours Section -->
+                <tr style="border-top: 2px solid #dbdbdb; background-color: #f4fafe;">
+                  <td rowspan="3" style="vertical-align: middle;"><strong>Ours</strong></td>
+                  <td class="has-text-left"><strong>TAP-8k episodes</strong></td>
+                  <td>50.0%</td><td>37.5%</td>
+                  <td>37.5%</td><td>8.3%</td>
+                  <td>58.3%</td><td>4.2%</td>
+                  <td>0.0%</td><td>0.0%</td>
+                  <td>36.45%</td><td>12.50%</td><td>24.47%</td>
+                </tr>
+                <tr style="background-color: #f4fafe;">
+                  <td class="has-text-left"><strong>TAP-14k episodes</strong></td>
+                  <td>41.7%</td><td>33.3%</td>
+                  <td><strong>50.0%</strong></td><td>16.7%</td>
+                  <td><strong>83.3%</strong></td><td>12.5%</td>
+                  <td>4.2%</td><td>0.0%</td>
+                  <td>44.80%</td><td>15.62%</td><td>30.21%</td>
+                </tr>
+                <tr style="background-color: #f4fafe;">
+                  <td class="has-text-left"><strong>TAP-20k episodes</strong></td>
+                  <td><strong>66.7%</strong></td><td><strong>58.3%</strong></td>
+                  <td><strong>50.0%</strong></td><td>0.0%</td>
+                  <td>58.3%</td><td><strong>16.7%</strong></td>
+                  <td>8.3%</td><td>8.3%</td>
+                  <td><strong>45.82%</strong></td><td><strong>20.82%</strong></td><td><strong>33.32%</strong></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="column">
-          <div class="box">
-            <h4 class="title is-5"><i class="fas fa-microchip"></i> Academic-Scale Compute</h4>
-            <p>Full pretraining + finetuning completes on a <strong>single 8×H100 node in ~24 GPU hours</strong>, versus weeks of industrial-scale training for typical VLAs [1].</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="box">
-            <h4 class="title is-5"><i class="fas fa-shield-alt"></i> Robust Generalization</h4>
-            <p>Demonstrated on <strong>SIMPLER simulation</strong> (unlocking task-irrelevant data) and <strong>real-world unseen background shifts</strong>, showing robust manipulation policies [1].</p>
+      </div>
+
+      <!-- Table 2: Real World -->
+      <div class="columns is-centered mt-6">
+        <div class="column is-full">
+          <h3 class="title is-4">Real-World Robustness</h3>
+          <p class="content has-text-justified">
+            Models are trained on only 200 expert demonstrations. Our TAP model is pretrained on 30 hours of autonomous self-exploration. TAP demonstrates remarkable resilience, surpassing the internet-scale NORA baseline in dynamic tasks with clutter ("Visual Distractors") and consistently outperforming all baselines under severe visual perturbations.
+          </p>
+          
+          <div class="table-container">
+            <table class="table is-bordered is-striped is-hoverable is-fullwidth" style="font-size: 0.9em; text-align: center;">
+              <thead>
+                <tr style="background-color: #f5f5f5;">
+                  <th rowspan="2" style="vertical-align: middle;">Evaluation Scenario</th>
+                  <th colspan="3" class="has-text-centered">Task: Put the carrot on the plate</th>
+                  <th colspan="3" class="has-text-centered">Task: Push the pumpkin to the left</th>
+                </tr>
+                <tr style="background-color: #f5f5f5;">
+                  <th>From scratch</th>
+                  <th><strong>TAP (Ours)</strong></th>
+                  <th>NORA (SOTA)</th>
+                  <th>From scratch</th>
+                  <th><strong>TAP (Ours)</strong></th>
+                  <th>NORA (SOTA)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="has-text-left"><strong>Standard Setup</strong></td>
+                  <td>20%</td><td>40%</td><td><strong>65%</strong></td>
+                  <td>55%</td><td>75%</td><td><strong>85%</strong></td>
+                </tr>
+                <tr>
+                  <td class="has-text-left"><strong>Initial State Perturbation</strong></td>
+                  <td>20%</td><td>30%</td><td><strong>65%</strong></td>
+                  <td>45%</td><td>75%</td><td><strong>80%</strong></td>
+                </tr>
+                <tr>
+                  <td class="has-text-left"><strong>Visual Distractors</strong></td>
+                  <td>5%</td><td>30%</td><td><strong>40%</strong></td>
+                  <td>5%</td><td><strong>65%</strong></td><td>60%</td>
+                </tr>
+                <tr style="border-top: 2px solid #dbdbdb;">
+                  <td class="has-text-left"><strong>Background Texture Shift</strong></td>
+                  <td>0%</td><td><strong>25%</strong></td><td>10%</td>
+                  <td>0%</td><td><strong>65%</strong></td><td>55%</td>
+                </tr>
+                <tr>
+                  <td class="has-text-left"><strong>Viewpoint Variation</strong></td>
+                  <td>0%</td><td><strong>15%</strong></td><td>0%</td>
+                  <td>0%</td><td><strong>25%</strong></td><td>0%</td>
+                </tr>
+                <tr style="border-top: 2px solid #dbdbdb; background-color: #f4fafe;">
+                  <td class="has-text-left"><strong>Average</strong></td>
+                  <td>9%</td><td>28%</td><td><strong>36%</strong></td>
+                  <td>21%</td><td><strong>61%</strong></td><td>56%</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Method / Image Carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3 has-text-centered">Method & Results</h2>
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <img src="static/images/carousel1.jpg" alt="TAP two-stage framework overview" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              <strong>Two-Stage Framework.</strong> Stage 1 pretrains on task-agnostic play/exploration data; Stage 2 finetunes with few expert demos.
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel2.jpg" alt="Data efficiency comparison" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              <strong>Data Efficiency.</strong> TAP matches baselines using orders of magnitude fewer expert trajectories [1].
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel3.jpg" alt="SIMPLER benchmark results" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              <strong>Simulation.</strong> Unlocking task-irrelevant data yields consistent gains on the SIMPLER benchmark [1].
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel4.jpg" alt="Real-world background robustness" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              <strong>Real-World Robustness.</strong> Strong performance under unseen background shifts [1].
-            </h2>
-          </div>
+  <!-- Case Studies & Qualitative Analysis -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Case Studies & Qualitative Analysis</h2>
+      <h3 class="title is-4">Visualizing Learned Physical Priors (Grad-CAM)</h3>
+      <!-- Visualizing Learned Priors (Half-text, half-image) -->
+      <div class="columns is-vcentered mt-5">
+        <div class="column is-half content has-text-justified">
+          <p>
+            To verify that task-agnostic data instills meaningful physical understanding, we visualize Grad-CAM attention maps. 
+          </p>
+          <p>
+            Without any text prompt, the Stage 1 pretrained model automatically concentrates on the robot gripper and interactive objects (the carrot or pumpkin), suppressing background noise. Once language instructions are introduced in Stage 2, attention strictly collapses onto the specific agent of action (the gripper) to ensure precise execution. This confirms our hypothesis that Stage 1 builds a broad space of physical affordances, while Stage 2 acts as a semantic filter.
+          </p>
+        </div>
+        <div class="column is-half has-text-centered">
+          <!-- TODO: Ensure your Figure 5 image is saved at this path -->
+          <img src="static/images/img_attention_map_0159.png" alt="Attention Map Analysis" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 100%;"/>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Video Presentation -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Real-world rollouts video carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3">Real-World Rollouts</h2>
-        <div id="results-carousel-video" class="carousel results-carousel">
-          <div class="item item-video1">
-            <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-              <source src="static/videos/carousel1.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video2">
-            <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-              <source src="static/videos/carousel2.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-video3">
-            <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-              <source src="static/videos/carousel3.mp4" type="video/mp4">
-            </video>
-          </div>
+      <!-- Real-World Qualitative Comparison (Single Image) -->
+      <div class="columns is-centered mt-6">
+        <div class="column is-full">
+          <h3 class="title is-4">Overcoming Unseen Background Shifts</h3>
+          <p class="content has-text-justified">
+            While standard baselines suffer from severe visual grounding failures when encountering novel table textures (e.g., NORA misjudges the pumpkin's location and pushes empty space), TAP accurately isolates the manipulable object, showcasing superior 3D spatial reasoning derived from robust, task-agnostic physical priors.
+          </p>
+          <!-- TODO: Ensure your Figure 6 image is saved at this path -->
+          <img src="static/images/case_study.png" alt="Qualitative Comparison in Simulation and Real-World" class="image is-centered mt-4" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"/>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Poster -->
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title">Poster</h2>
-        <iframe src="static/pdfs/poster.pdf" width="100%" height="550"></iframe>
+  <section class="section is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Poster</h2>
+      <div class="mt-4 has-text-centered">
+        <!-- 确保你的 poster 图片文件放在 static/images/poster.png -->
+        <img src="static/images/poster.png" alt="Project Poster" style="width: 100%; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
       </div>
     </div>
   </section>
