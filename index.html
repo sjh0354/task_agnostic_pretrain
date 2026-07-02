@@ -3,119 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <meta name="title" content="Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs - Junhao Shi et al.">
-  <meta name="description" content="Task-Agnostic Pretraining (TAP), a two-stage framework that learns transferable motor priors from cheap, unlabeled interaction data for Vision-Language-Action (VLA) models.">
-  <meta name="keywords" content="Vision-Language-Action, VLA, Task-Agnostic Pretraining, Embodied AI, Inverse Dynamics, Robot Learning, Manipulation">
-  <meta name="author" content="Junhao Shi, Siyin Wang, Xiaopeng Yu, Li Ji, Jingjing Gong, Xipeng Qiu">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models">
+  <meta name="description" content="TAP leverages task-agnostic data to pretrain VLA models, achieving competitive manipulation performance with orders of magnitude less expert data on academic-scale compute.">
+  <meta name="keywords" content="Vision-Language-Action, VLA, Robot Learning, Task-Agnostic Pretraining, Manipulation, Data Efficiency, OpenVLA, LIBERO, machine learning, computer vision, AI">
+  <meta name="author" content="Your Name, Co-Author Name">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Fudan University & Shanghai Innovation Institute">
-  <meta property="og:title" content="Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs">
-  <meta property="og:description" content="Task-Agnostic Pretraining (TAP), a two-stage framework that learns transferable motor priors from cheap, unlabeled interaction data for Vision-Language-Action (VLA) models.">
-  <meta property="og:url" content="https://sjh0354.github.io/task_agnostic_pretrain">
-  <meta property="og:image" content="https://sjh0354.github.io/task_agnostic_pretrain/static/images/social_preview.png">
+  <meta property="og:site_name" content="Your Lab Name">
+  <meta property="og:title" content="TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models">
+  <meta property="og:description" content="TAP leverages task-agnostic data to pretrain VLA models, achieving competitive manipulation performance with orders of magnitude less expert data.">
+  <meta property="og:url" content="https://YOUR_DOMAIN.github.io/TAP">
+  <meta property="og:image" content="https://YOUR_DOMAIN.github.io/TAP/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="TAP Framework Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="Junhao Shi">
+  <meta property="og:image:alt" content="TAP - Task-Agnostic Pretraining Preview">
+  <meta property="article:published_time" content="2025-01-01T00:00:00.000Z">
+  <meta property="article:author" content="Your Name">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="Robotics">
-  <meta property="article:tag" content="Embodied AI">
+  <meta property="article:tag" content="Vision-Language-Action">
+  <meta property="article:tag" content="Robot Learning">
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <meta name="twitter:title" content="Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs">
-  <meta name="twitter:description" content="Task-Agnostic Pretraining (TAP), a two-stage framework that learns transferable motor priors from cheap, unlabeled interaction data for Vision-Language-Action (VLA) models.">
-  <meta name="twitter:image" content="https://sjh0354.github.io/task_agnostic_pretrain/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="TAP Framework Preview">
+  <meta name="twitter:site" content="@YOUR_LAB_HANDLE">
+  <meta name="twitter:creator" content="@YOUR_HANDLE">
+  <meta name="twitter:title" content="TAP: Task-Agnostic Pretraining for VLA Models">
+  <meta name="twitter:description" content="Data-efficient VLA training using free task-agnostic data — reproducible on a single 8×H100 node in ~24 GPU hours.">
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.github.io/TAP/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="TAP Research Preview">
 
-  <meta name="citation_title" content="Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs">
-  <meta name="citation_author" content="Shi, Junhao">
-  <meta name="citation_author" content="Wang, Siyin">
-  <meta name="citation_author" content="Yu, Xiaopeng">
-  <meta name="citation_author" content="Ji, Li">
-  <meta name="citation_author" content="Gong, Jingjing">
-  <meta name="citation_author" content="Qiu, Xipeng">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="ArXiv Preprint">
-  <meta name="citation_pdf_url" content="https://sjh0354.github.io/task_agnostic_pretrain/static/pdfs/paper.pdf">
-  
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models">
+  <meta name="citation_author" content="LastName, FirstName">
+  <meta name="citation_author" content="LastName2, FirstName2">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="arXiv Preprint">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/ARXIV_ID.pdf">
+
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
   <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <title>Learning to Move Before Learning to Do | TAP Framework</title>
-  
+  <title>TAP: Task-Agnostic Pretraining for VLA | Academic Research</title>
+
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
-    "description": "Task-Agnostic Pretraining (TAP), a two-stage framework that learns transferable motor priors from cheap, unlabeled interaction data.",
+    "headline": "TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models",
+    "description": "A two-stage framework that pretrains VLA policies on free task-agnostic interaction data and finetunes with a handful of expert demonstrations.",
     "author": [
-      { "@type": "Person", "name": "Junhao Shi", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
-      { "@type": "Person", "name": "Siyin Wang", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
-      { "@type": "Person", "name": "Xiaopeng Yu", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
-      { "@type": "Person", "name": "Li Ji", "affiliation": { "@type": "Organization", "name": "Fudan University" } },
-      { "@type": "Person", "name": "Jingjing Gong", "affiliation": { "@type": "Organization", "name": "Shanghai Innovation Institute" } },
-      { "@type": "Person", "name": "Xipeng Qiu", "affiliation": { "@type": "Organization", "name": "Fudan University" } }
+      {
+        "@type": "Person",
+        "name": "First Author",
+        "affiliation": { "@type": "Organization", "name": "Your Institution" }
+      },
+      {
+        "@type": "Person",
+        "name": "Second Author",
+        "affiliation": { "@type": "Organization", "name": "Your Institution" }
+      }
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "ArXiv Preprint"
-    },
-    "url": "https://sjh0354.github.io/task_agnostic_pretrain",
-    "keywords": ["Vision-Language-Action", "VLA", "Task-Agnostic Pretraining", "Embodied AI"],
+    "datePublished": "2025-01-01",
+    "publisher": { "@type": "Organization", "name": "arXiv" },
+    "url": "https://YOUR_DOMAIN.github.io/TAP",
+    "image": "https://YOUR_DOMAIN.github.io/TAP/static/images/social_preview.png",
+    "keywords": ["Vision-Language-Action", "Robot Learning", "Task-Agnostic Pretraining", "Data Efficiency", "Manipulation"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/"
   }
   </script>
 </head>
 <body>
-
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
+
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <a href="https://arxiv.org/abs/2506.21230" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Enhancing Large Vision-Language Model Planners</h5>
+            <p>Improving planning capabilities of large VLM-based agents.</p>
+            <span class="work-venue">arXiv 2025</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/2510.13626" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>LIBERO-Plus: In-Depth Robustness Analysis of VLA Models</h5>
+            <p>A comprehensive robustness benchmark for vision-language-action models.</p>
+            <span class="work-venue">arXiv 2025</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -123,151 +160,213 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            
-            <h1 class="title is-1 publication-title">Learning to Move Before Learning to Do: <br> Task-Agnostic Pretraining for VLAs</h1>
-            
+            <h1 class="title is-1 publication-title">TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models</h1>
             <div class="is-size-5 publication-authors">
-              <span class="author-block">Junhao Shi<sup>1,2</sup>,</span>
-              <span class="author-block">Siyin Wang<sup>1,2</sup>,</span>
-              <span class="author-block">Xiaopeng Yu,</span>
-              <span class="author-block">Li Ji<sup>1</sup>,</span>
-              <span class="author-block">Jingjing Gong<sup>2</sup>,</span>
-              <span class="author-block">Xipeng Qiu<sup>1,2,†</sup></span>
+              <span class="author-block">
+                <a href="FIRST_AUTHOR_LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="SECOND_AUTHOR_LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD_AUTHOR_LINK" target="_blank">Third Author</a>
+              </span>
             </div>
-
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Fudan University, OpenMOSS & Institute of Trustworthy Embodied AI</span><br>
-              <span class="author-block"><sup>2</sup>Shanghai Innovation Institute</span>
-              <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Authors</small></span>
+              <span class="author-block">Your Institution<br>arXiv Preprint, 2025</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             </div>
-
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="#" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-
-              <span class="link-block">
-                <a href="https://huggingface.co/collections/Michael0354/task-agnostic-pretraining" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fas fa-database"></i>
+                  <a href="https://arxiv.org/pdf/ARXIV_ID.pdf" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
+                  </a>
                 </span>
-                <span>HF Models</span>
-              </a>
-            </span>
-
-            <span class="link-block">
-              <a href="https://github.com/sjh0354/Task-Agnostic-Pretrain" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class="fab fa-github"></i>
-              </span>
-              <span>Code</span>
-            </a>
-          </span>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <b>Task-Agnostic Pretraining (TAP):</b> We propose a two-stage framework that first learns transferable motor priors ("how to move") from unlabeled interactions and then grounds them in language ("what to do"). 
-      </h2>
-    </div>
-  </div>
-</section>
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations—triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the latter requires language supervision. 
-          </p>
-          <p>
-            Building on this Decomposition Hypothesis, we propose Task-Agnostic Pretraining (TAP), a two-stage framework that first learns transferable motor priors from cheap, unlabeled interaction data—including discarded off-task trajectories and autonomous robot play—via a self-supervised Inverse Dynamics objective. A lightweight second stage then grounds these priors in language using minimal expert data. 
-          </p>
-          <p>
-            On the SIMPLER benchmark, TAP matches models trained on over 1M expert trajectories while using orders of magnitude less labeled data, yielding a 10% absolute gain over standard behavior cloning. On a real-world WidowX platform, TAP retains 25% success under camera perturbations where internet-scale baselines collapse to 0%, demonstrating that task-agnostic pretraining produces robust, transferable physical representations and offers a scalable path forward for Embodied AI.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <img src="static/images/carousel1.jpg" alt="Overview of TAP Framework" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Overview of the Proposed Task-Agnostic Pretraining (TAP) Framework.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel2.jpg" alt="Real-World Evaluation Setup" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Real-World Evaluation Setup and Robustness Protocols on a physical WidowX 250 robot.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="Attention Map Analysis" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Attention Map Analysis: Task-agnostic pretraining yields robust physical priors transferring to novel environments.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/carousel4.jpg" alt="Qualitative Comparison in Simulation and Real-World" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Qualitative Comparison across simulation and real-world environments against standard BC and NORA.
-        </h2>
-      </div>
-  </div>
-</div>
-</div>
-</section>
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/YOUR_USERNAME/TAP" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/ARXIV_ID" target="_blank"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Paper PDF</h2>
-      <iframe src="static/pdfs/TAP_Arxiv-2.pdf" width="100%" height="600px">
-      </iframe>
+  </section>
+
+  <!-- Teaser -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
+          <source src="static/videos/banner_video.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          <strong>TAP</strong> unlocks "free" task-agnostic interaction data (e.g., exploration and play) for pretraining VLA policies,
+          then finetunes with only a handful of expert demonstrations — matching baselines that use orders of magnitude more expert data.
+        </h2>
+      </div>
     </div>
-  </div>
-</section>
-<section class="section" id="BibTeX">
+  </section>
+
+  <!-- Abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Modern Vision-Language-Action (VLA) models such as OpenVLA achieve strong manipulation performance,
+              but rely on millions of expert demonstrations and industrial-scale compute (e.g., TPU v4 Pods or large A100 clusters)
+              trained for weeks. We introduce <strong>TAP (Task-Agnostic Pretraining)</strong>, a two-stage framework that
+              dramatically reduces both requirements. In <em>Stage 1</em>, we pretrain on task-agnostic interaction data
+              (e.g., exploration or play) that is <em>free</em> in terms of human labeling cost. In <em>Stage 2</em>,
+              we finetune with only a fraction of the expert demonstrations — as few as <strong>200 real-world trajectories</strong> —
+              yet achieve performance competitive with baselines trained on millions of trajectories [1]. Our full pipeline
+              runs on a <strong>single node with 8×H100 GPUs in ~24 GPU hours</strong>, making the reproduction and iteration
+              of VLA policies significantly more accessible to the academic community [1].
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Contributions -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Key Contributions</h2>
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <h4 class="title is-5"><i class="fas fa-database"></i> Data Efficient</h4>
+            <p>Reduces expert-data demand by <strong>several orders of magnitude</strong>, using only ~200 trajectories in real-world experiments while matching baselines trained on millions [1].</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h4 class="title is-5"><i class="fas fa-microchip"></i> Academic-Scale Compute</h4>
+            <p>Full pretraining + finetuning completes on a <strong>single 8×H100 node in ~24 GPU hours</strong>, versus weeks of industrial-scale training for typical VLAs [1].</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <h4 class="title is-5"><i class="fas fa-shield-alt"></i> Robust Generalization</h4>
+            <p>Demonstrated on <strong>SIMPLER simulation</strong> (unlocking task-irrelevant data) and <strong>real-world unseen background shifts</strong>, showing robust manipulation policies [1].</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Method / Image Carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3 has-text-centered">Method & Results</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <img src="static/images/carousel1.jpg" alt="TAP two-stage framework overview" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Two-Stage Framework.</strong> Stage 1 pretrains on task-agnostic play/exploration data; Stage 2 finetunes with few expert demos.
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel2.jpg" alt="Data efficiency comparison" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Data Efficiency.</strong> TAP matches baselines using orders of magnitude fewer expert trajectories [1].
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel3.jpg" alt="SIMPLER benchmark results" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Simulation.</strong> Unlocking task-irrelevant data yields consistent gains on the SIMPLER benchmark [1].
+            </h2>
+          </div>
+          <div class="item">
+            <img src="static/images/carousel4.jpg" alt="Real-world background robustness" loading="lazy"/>
+            <h2 class="subtitle has-text-centered">
+              <strong>Real-World Robustness.</strong> Strong performance under unseen background shifts [1].
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Presentation -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real-world rollouts video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Real-World Rollouts</h2>
+        <div id="results-carousel-video" class="carousel results-carousel">
+          <div class="item item-video1">
+            <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/carousel1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/carousel2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+              <source src="static/videos/carousel3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Poster -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+        <iframe src="static/pdfs/poster.pdf" width="100%" height="550"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- BibTeX -->
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -276,30 +375,32 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{shi2024learning,
-  title={Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs},
-  author={Shi, Junhao and Wang, Siyin and Yu, Xiaopeng and Ji, Li and Gong, Jingjing and Qiu, Xipeng},
-  journal={arXiv preprint},
-  year={2024},
-  url={https://sjh0354.github.io/task_agnostic_pretrain}
+      <pre id="bibtex-code"><code>@article{tap2025,
+  title   = {TAP: Task-Agnostic Pretraining for Data-Efficient Vision-Language-Action Models},
+  author  = {First Author and Second Author and Third Author},
+  journal = {arXiv preprint arXiv:ARXIV_ID},
+  year    = {2025},
+  url     = {https://YOUR_DOMAIN.github.io/TAP}
 }</code></pre>
     </div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+              which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
-  </body>
-  </html>
+  </footer>
+  </main>
+</body>
+</html>
